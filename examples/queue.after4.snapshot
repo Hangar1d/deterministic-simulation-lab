@@ -1,0 +1,15 @@
+SIMLAB_SNAPSHOT 1
+config 1 2 5
+clock 4
+rng 182605794
+next_sequence 6
+processed 4
+arrived 3
+registered 4 10 20 30 40
+waiting 1 30
+completed 1 10
+active 1 20 7
+events 2
+event 4 arrival 3 40
+event 7 completion 5 20
+end

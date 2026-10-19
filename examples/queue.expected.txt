@@ -1,0 +1,29 @@
+SIMLAB_RESULT 1
+trace 12
+0 arrive 10
+0 start 10 duration 4
+0 arrive 20
+2 arrive 30
+4 finish 10
+4 start 20 duration 3
+4 arrive 40
+7 finish 20
+7 start 30 duration 3
+10 finish 30
+10 start 40 duration 2
+12 finish 40
+state
+SIMLAB_SNAPSHOT 1
+config 1 2 5
+clock 12
+rng 1914720637
+next_sequence 8
+processed 8
+arrived 4
+registered 4 10 20 30 40
+waiting 0
+completed 4 10 20 30 40
+active 0
+events 0
+end
+end_result

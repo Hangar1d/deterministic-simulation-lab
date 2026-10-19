@@ -1,0 +1,7 @@
+/build/
+/build-*/
+/CMakeUserPresets.json
+/run.record
+/checkpoint.snapshot
+/first.txt
+/second.txt

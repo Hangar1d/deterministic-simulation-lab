@@ -1,0 +1,8 @@
+SIMLAB_PLAN 1
+config 1 2 5
+jobs 4
+job 0 10
+job 0 20
+job 2 30
+job 4 40
+end
