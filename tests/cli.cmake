@@ -49,7 +49,9 @@ elseif(CASE STREQUAL "tampered_record")
     run_ok(recorded record "${plan}" "${WORK}/one.record")
     file(READ "${WORK}/one.record" record)
     string(REPLACE "duration 4" "duration 5" tampered "${record}")
-    file(WRITE "${WORK}/tampered.record" "${tampered}")
+    # Keep the length-prefixed record canonical on Windows as well.
+    file(CONFIGURE OUTPUT "${WORK}/tampered.record" CONTENT "${tampered}"
+        @ONLY NEWLINE_STYLE LF)
     run_bad(1 replay "${WORK}/tampered.record")
     if(NOT last_error MATCHES "replay mismatch")
         message(FATAL_ERROR "Tampered replay did not fail for the expected reason: ${last_error}")
